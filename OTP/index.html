@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class='container'>
+   <h1 class = 'title'>OTP GENERATOR</h1>
+    <div class="instruction">
+      <h4>Instructions:</h4>
+    <ul><li>The OTP is valid for 120 seconds </li> <li>Don't share your OTP with anyone</li></ul>
+    </div>
+    <div class="inputs">
+      <span class='select'>Select the type of OTP :</span> <br><br>
+      <input type="radio" name='otp' value='1'><span>Letters</span>
+      <input type="radio" name='otp' value='2'><span>Numbers</span>
+      <input type="radio" name='otp' value='3'><span>Mixed</span><br> <br>
+      <button onclick='generateOtp()'>Generate OTP</button>
+    </div>
+    <div class="otp">
+      <h3>OTP :</h3><h3 id='res'></h3>
+    </div>
+    
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
